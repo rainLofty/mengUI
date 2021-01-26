@@ -1,7 +1,7 @@
 # 说明
-1.一个vue插件简单demo
-2.直接把文件夹放到node_module文件夹里面就可以了
-3.使用：在项目的main.js中像使用普通ui插件一样引用安装
+* 1.一个vue插件简单demo
+* 2.直接把文件夹放到node_module文件夹里面就可以了
+* 3.使用：在项目的main.js中像使用普通ui插件一样引用安装
 
 ```js
 import mengUI from "meng_node";
