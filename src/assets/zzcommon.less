@@ -1,0 +1,219 @@
+@import url("./fonts/iconfont.css");
+@maincolor: #2d92ea;
+body,
+ul,
+li,
+dl,
+dt,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dd,
+p,
+ol {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+div[v-cloak] {
+  display: none;
+}
+body,
+html,
+#app,
+#app > div {
+  height: 100%;
+}
+input,
+textarea,
+button,
+select {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  outline: none;
+  font-family: "SimHei";
+}
+
+
+body {
+  background: #eff3fa;
+  color: #333333;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong,
+th {
+  font-weight: normal;
+}
+.clearfix {
+  zoom: 1;
+  &:after {
+    content: ".";
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    display: block;
+  }
+}
+
+
+button {
+  cursor: pointer;
+  flex-shrink: 0;
+  border: none;
+  outline: none;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 18px;
+  color: #fff;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color:#333;
+  &:disabled,
+  &.disabled {
+    color:#bbb;
+  }
+  &.blueBtn {
+    color:#fff;
+    background: #2d92ea;
+    &:hover {
+      background: #2b7bcb;
+    }
+    &:disabled,
+    &.disabled {
+      background: #abd3f7;
+    }
+    &.selected {
+      background: #1061b2;
+    }
+  }
+  &.greenBtn {
+    color:#fff;
+    background: #2fc060;
+    &:hover {
+      background: #23af52;
+    }
+    &:disabled,
+    &.disabled {
+      background: #ace6bf;
+    }
+  }
+  &.orangeBtn {
+    color:#fff;
+    background: #ff8429;
+    &:hover {
+      background: #e8721a;
+    }
+    &:disabled,
+    &.disabled {
+      background: #ffcea9;
+    }
+  }
+  &.redBtn {
+    color:#fff;
+    background: #f24b4b;
+    &:hover {
+      background: #de3a3a;
+    }
+    &:disabled,
+    &.disabled {
+      background: #fab7b7;
+    }
+  }
+  &.grayBtn {
+    background: #eee;
+    color: #666;
+    &:hover {
+      background: #ddd;
+    }
+    &:disabled,
+    &.disabled {
+      background: #eee;
+      color:#bbb;
+    }
+  }
+}
+//dialog弹窗的样式
+.el-dialog__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .el-dialog {
+    margin: 0 auto !important;
+    .el-dialog__body {
+      overflow-y: auto;
+      overflow-x: hidden;
+      padding: 30px 30px 0;
+    }
+    .el-dialog__header {
+      position: relative;
+      font-size: 20px;
+      padding: 0px 0px 0px 15px;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      line-height: 40px;
+      height: 40px;
+      background: #141e46;
+
+      .el-dialog__title {
+        color: #fff;
+        font-size: 16px;
+      }
+      .el-dialog__headerbtn {
+        top: 3px;
+        .el-dialog__close:before {
+          font-size: 22px;
+          font-weight: 100;
+          color: #fff;
+        }
+      }
+    }
+
+   
+  }
+}
+
+//表单的样式
+.formwrap {
+  align-content: flex-start;
+  dl {
+    margin-bottom: 20px;
+  }
+  dt {
+    height: 36px;
+    line-height: 36px;
+    font-size: 16px;
+    color: #333;
+    line-height: 36px;
+    display: flex;
+    b {
+      color: #f00;
+      font-weight: normal;
+      margin-right: 5px;
+    }
+  }
+  
+}
